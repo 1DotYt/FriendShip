@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Friendship Day</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <div class="hearts-container"></div>
+
+  <!-- SECTION 1 - NAME ENTRY -->
+  <div id="section1" class="section active">
+    <h2 class="title">✨ Friendship Day ✨</h2>
+    <p class="small-text">A special surprise awaits...</p>
+    <p>What is your bestfriend's name?</p>
+    <input type="text" id="nameInput" placeholder="Enter the name..." />
+    <button id="enterBtn">Enter ✨</button>
+    <p id="errorMsg"></p>
+  </div>
+
+  <!-- SECTION 2 - MEMORIES -->
+  <div id="section2" class="section">
+    <!-- Removed back button here -->
+    <h2>📸 Beautiful Memories 📸</h2>
+    <p id="mainText">Our friendship is a treasure! 💎</p>
+    <div class="photo-grid">
+      <div class="photo-card" data-text="Beautiful Friendship ✨">
+        <img src="img2" alt="" />
+        <p>Beautiful Friendship ✨</p>
+      </div>
+      <div class="photo-card" data-text="Forever Friends 💕">
+        <img src="img1" alt="" />
+        <p>Forever Friends 💕</p>
+      </div>
+      <div class="photo-card" data-text="Special Moments 🌸">
+        <img src="img3" alt="" />
+        <p>Special Moments 🌸</p>
+      </div>
+    </div>
+    <div class="message-box glass">
+      <h3 id="friendName">Forever & Always, [name]!</h3>
+      <p>
+        These pictures represent just a glimpse of the beautiful friendship we share. 
+        Every laugh, every adventure, every moment of support – they all make our bond stronger. 
+        Thank you for being the most wonderful friend anyone could ask for. 
+        Here’s to creating many more amazing memories together!
+      </p>
+    </div>
+    <button id="moreBtn">More Memories 📷</button>
+    <p id="footerText">Happy Friendship Day, [name]! 🎉✨🌸</p>
+  </div>
+
+  <!-- SECTION 3 - FINAL -->
+  <div id="section3" class="section">
+    <button class="backBtn">⬅ Back</button>
+    <h2>✨ Friendship Day ✨</h2>
+    <p id="finalHeader">Happy Friendship Day!</p>
+    <div class="photo-grid">
+      <div class="photo-card"><img src="imga" alt=""><p>Beautiful Friendship ✨</p></div>
+      <div class="photo-card"><img src="imgb" alt=""><p>Forever Friends 💕</p></div>
+      <div class="photo-card"><img src="imgc" alt=""><p>Special Moments 🌸</p></div>
+    </div>
+    <div class="message-box glass">
+      <p id="finalMessage">
+        Dear [name],<br>  
+        On this special Friendship Day, I want you to know how grateful I am to have you in my life. 
+        Your friendship means the world to me, and I’m so lucky to call you my bestie! 
+        Here’s to all our inside jokes, late-night conversations, and countless memories we’ve made together.
+      </p>
+    </div>
+    <div class="button-row">
+      <button id="playBtn">🎮 Mini Games</button>
+    </div>
+    <p class="sparkles">⭐ ⭐ ⭐ ⭐ ⭐</p>
+    <p id="finalFooter">Happy Friendship Day! 🎉💕✨</p>
+  </div>
+
+  <!-- SECTION 4 - GAMES -->
+  <div id="section4" class="section">
+    <button class="backBtn">⬅ Back</button>
+    <h2>🎮 Mini Games 🎮</h2>
+    <div class="game-links">
+      <button id="memoryGameBtn">❤️ Memory Flip</button>
+      <button id="targetGameBtn">🎯 Target Click</button>
+      <button id="quizGameBtn">🧩 Friendship Quiz</button>
+    </div>
+  </div>
+
+  <!-- MEMORY GAME -->
+  <div id="memorySection" class="section">
+    <button class="backBtn">⬅ Back</button>
+    <h2>❤️ Memory Game</h2>
+    <div id="memoryGame" class="memory-grid"></div>
+  </div>
+
+  <!-- TARGET GAME -->
+  <div id="targetSection" class="section">
+    <button class="backBtn">⬅ Back</button>
+    <h2>🎯 Target Click</h2>
+    <p class="small-text">Click the target as many times as possible in 15s!</p>
+    <div id="targetBoard" class="target-board"></div>
+    <p id="scoreDisplay">Score: 0</p>
+    <button id="startTargetGame">Start</button>
+  </div>
+
+  <!-- QUIZ GAME -->
+  <div id="quizSection" class="section">
+    <button class="backBtn">⬅ Back</button>
+    <h2>🧩 Friendship Quiz</h2>
+    <div id="quizBox">
+      <p id="quizQuestion">Question will appear here</p>
+      <input type="text" id="quizInput" placeholder="Type your answer..." />
+      <button id="quizSubmit">Submit</button>
+    </div>
+    <p id="quizResult"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
